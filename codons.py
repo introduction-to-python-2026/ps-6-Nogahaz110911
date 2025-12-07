@@ -6,5 +6,6 @@ def create_codon_dict(file_path):
             if clean_line:
                 parts = clean_line.split()
                 if len(parts) == 2:
+                    codon, amino_acid = parts
                     codon_dict[codon] = amino_acid
     return **codon_dict**
